@@ -149,4 +149,17 @@ TokenInfo(type=4 (NEWLINE), string='\n', start=(1, 5), end=(1, 6), line='x = 2\n
     ```
 
     Each opcode represents one virtual machine instruction.
-    
+5. Bytecode Execution vy PVM
+    - PVM is stack based interpreter
+    - It maintains"
+        - call stack(frames for each function/module)
+        - data stack (for operations)
+        - Namespace directories(globals, locaks)
+    - Runs a loop known as Eval loop ()
+6. Memory Management
+    While executing, Python manages objects dynamically in memory
+    Memory model:
+        - Everything is object(int, str, function, etc.)
+        - Stored in heap
+        - Each object has a reference count
+        - When count -> 0 -> object destroyed
